@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <link href="../CSS/Untitled-1.css">
+    <script>
+        var sayALERT = function () {
+            alert("You are in there!")
+        }
+        var helloAB = function (a, b, c, d) {
+            var helloAB
+            if (a > b) {
+                helloAB = a
+            }
+            else {
+                helloAB = b
+            }
+            if (helloAB < c) {
+                helloAB = c
+            }
+            if (helloAB < d) {
+                helloAB = d
+            }
+            return helloAB
+        }
+        window.document.write("希望今天可以赚到" + helloAB(20, 551888, 66, 9000) + "元")
+        function cTemp(A) {                      //开始创建一个名叫cTemp的传参函数，传的参数叫A
+            var hTemp = ((A * 9) / 5 + 32)           //声明一个名叫hTemp的变量，并且规定它的用法是对A进行乘以9再除以5最后加32的运算
+            alert(hTemp + "转换为华氏度℉成功")  //创建了一个警告框——内容为“A通过计算最后的值和‘转换为华氏度℉成功’”   在警告框的内容中【也就是alert()】用引号可以原样显示引号里面的内容
+            return hTemp                      //在这里用return语句结束了函数的运行，并且用警告框的方式显示函数最后的值
+        }
+
+    </script>
+    <p>
+    <h2>将进酒——李白</h2>
+    君不见黄河之水天上来，奔流到海不复回。<br />
+    君不见高堂明镜悲白发，朝如青丝暮成雪。<br />
+    人生得意须尽欢，莫使金樽空对月。<br />
+    天生我材必有用，千金散尽还复来。<br />
+    烹羊宰牛且为乐，会须一饮三百杯。<br />
+    岑夫子，丹丘生，将进酒，杯莫停。<br />
+    <br />
+    与君歌一曲，请君为我倾耳听。<br />
+    钟鼓馔玉不足贵，但愿长醉不复醒。<br />
+    古来圣贤皆寂寞，惟有饮者留其名。<br />
+    陈王昔时宴平乐，斗酒十千恣欢谑。<br />
+    主人何为言少钱，径须沽取对君酌。<br />
+    五花马、千金裘，呼儿将出换美酒，与尔同销万古愁</p>
+    
+    <img src="LenovoWallPaper.png" onclick="this.src='肆百击-王源.jpg'" onmouseout="this.src='../LenovoWallPaper.png'"
+        title="别晃了，啥也不是！" class="img">
+    <br />
+    <button onclick="cTemp(10)">10℃</button>
+    <!--这里的onclick（鼠标捕获事件）中直接用function后面创建的函数名【（）也是函数名的一部分】-->
+    <button onclick="cTemp(20)">20℃</button>
+    <!--这里调用函数时，直接在调用的时候给了它一个值-->
+    <button onclick="cTemp(30)">30℃</button>
+    <!--这里的30乘以9再除以5最后加上32得到的值是86-->
+ 
+    <script>
+        //创建传参函数
+        function sayHello(A) {
+            A = A || 0
+            var cTemp = (A * 9) / 5 + 32
+
+            return cTemp
+        }
+        var a, b, c, d, e
+        a = 10;
+        b = 20;
+        c = 30;
+        d = 40;
+        b = a + d
+        c = a + b
+        document.write("a=" + a + ";b=" + b + ";c=" + c + ";d=" + d)
+    </script>
+    <br />
+    <input type="button" onclick="alert(sayHello(10))" value="10摄氏度" class="input1">
+    <input type="button" onclick="alert(sayHello(20))" value="20摄氏度" class="input1">
+    <input type="button" onclick="alert(sayHello(30))" value="30摄氏度" class="input1">
+    <input type="button" onclick="alert(sayHello())" value="0摄氏度" class="input1">
+    <br />
+    <a href="http://www.baidu.com" class="a">Bron Free,Love Fearless</a>
+    <style>
+   
+    </style>
+    <script>
+        function bidaxiao(a, b, c, d, e) {
+            var bidaxiao
+            if (a > b) {
+                bidaxiao = a
+            }
+            else {
+                bidaxiao = b
+            }
+            if (c > bidaxiao) {
+                bidaxiao = c
+            }
+            if (d > bidaxiao) {
+                bidaxiao = d
+            }
+            if (e > bidaxiao) {
+                bidaxiao = e
+            }
+            return bidaxiao
+        }
+    </script>
+    <br />
+    <input type="button" onclick="alert('你今年'+bidaxiao(1,2,3,4,18)+'岁')" value="猜猜你今年多少岁" calss="input2">
+    <input type="button" onclick="alert('你的钱包有'+bidaxiao(3,20,78,34,67)+'厘米厚，哇！不得了！(⊙o⊙)')" value="猜猜你的钱包有多厚">
+    <script>
+        //创建传参函数
+        function sayHello(A) {
+            A = A || 1
+            var cTemp = (A * 9) / 5 + 32
+
+            return cTemp
+        }
+
+    </script>
+    <br />
+    <input type="button" onclick="alert(sayHello(10))" value="10摄氏度">
+    <input type="button" onclick="alert(sayHello(20))" value="20摄氏度">
+    <input type="button" onclick="alert(sayHello(30))" value="30摄氏度">
+    <input type="button" onclick="alert(sayHello())" value="默认值">
+    <pre>Brave faces
+Cover scrapes up with band aids
+But I can't keep on lying to myself
+And keep on saying I don't need nobody else
+Cold sheets
+Felt so good to the old me
+But I can't keep on lying by myself
+Hate to admit it but I need to be held need to be held again
+Seeing all my friends holding hands at the bar
+Watching old lovers feeding birds in the park
+Second hand feelings never quite enough
+Wish I could just stop the clocks
+And tear this city down til I find us
+I know the words but not the sound
+My heart is tired
+Of sleeping far away from home
+If there's a god above my head
+If it's not too much to ask
+Just stop the clocks
+Stop the clocks
+Just stop the clocks
+Mistakes
+From my past come to haunt me
+The devil I could never put to rest
+If it hurt me once it's gonna hurt again
+Seeing all my friends holding hands at the bar
+Watchin old lovers feeding birds in the park
+Second hand feelings never quite enough
+Wish I could just stop the clocks
+And tear this city down til I find us
+I know the words but not the sound
+My heart is tired
+Of sleeping far away from home
+If there's a god above my head
+If it's not too much to ask
+Just stop the clocks
+Stop the clocks
+Just stop the clocks
+Just stop the clocks
+Stop the clocks
+</pre>
+<!--For Roy Wang-《Stop The Clocks》-->
+    <h1>2021年4月25日</h1>
+
+    <script>
+        function a() {
+            var b = document.getElementById("input1").value
+            document.getElementById("h3").innerHTML = "Hello！" + b + "   Welcome to Jackson's Web!"
+        }
+
+    </script>
+    <h1>Welcome to Jackson's Web!</h1>
+    <input type="text" id="input1" class="input0425" /><br />
+    <input type="password" class="input0425">
+    <button onclick="a()" class="button">confirm</button>
+    <h3 id="h3"></h3>
+    <!--<script>
+        function A(a,b,c){
+            var B
+            if(a>b){
+                B=a+c
+            }
+            else{
+                B=b+c
+            }
+            B=B+a+b
+            return B
+        }
+    </script>
+    <input type="button" value="IQQ" onclick="alert(A(2,3,4))">-->
+    <h4>20210428 21:13</h4>
+    <script>
+        /* var stuName
+        stuName="叶登生"
+        alert (stuName)
+         var stuAge
+        stuAge=16
+        alert (stuAge)
+         var stuTuan
+        stuTuan="不是团员" 
+        alert(stuTuan)*/
+
+        function pf(a) {
+            var b = a * a
+            alert(b)
+            return b
+        }
+    </script>
+    <img src="1.png" title="你还没有点击哦！" onclick="this.title='My New Title'">
+    <button onclick="pf(3)">操作题第3题</button>
+    <div>
+
+        <script>
+            function a() {
+                var b = document.getElementById("4399").value
+
+            }
+        </script>
+        <input type='text' value="请输入" id="4399"><input class="" onclick="a()" type='submit'>
+    </div>
+    <div>
+        <h1>May 28 2021</h1>
+
+        <script>
+            function ceil() {
+                var o = document.getElementById('p').value
+                alert(Math.ceil(o))
+            }
+            function floor() {
+                var floor = document.getElementById('pp').value
+                confirm(Math.floor(floor))
+            }
+            function round() {
+                var round = document.getElementById('round').value
+                confirm(Math.round(round))
+            }
+        </script>
+        <h4>向上取整</h4>
+        <input type="text" id="p"><button onclick="ceil()">确定</button><br />
+        <h4>向下取整</h4>
+        <input type="text" id="pp"><button onclick="floor()">确定</button><br />
+        <h4>四舍五入</h4>
+        <input type="text" id="round"><button onclick="round()">确定</button>
+    </div>
+    <div>
+        <h1>June 2021 24 </h1>
+
+        <script>
+            function help() {
+                var friends = document.getElementById('help').innerHTML = 'I love you Tanks for your help me in need help!'
+            }
+        </script>
+        <button onclick="help()">Help me!</button>
+        <h1 class="h1" id="help"></h1>
+    </div>
+    <div>
+        <script src="../Outside JavaScript/Untitled-1.js">
+
+        </script>
+        <link herf="../CSS/Untitled-1.css">
+        <pre>
+            马嘉祺：
+            星星睡在银河臂弯
+            各自闪着不同神采
+            宋亚轩：
+            唯有一颗独自呢喃
+            宋亚轩/姚景元：
+            怎么才能亮得不平凡
+            丁程鑫：
+            云朵路过这片天空
+            变幻着各样的面孔
+            姚景元/刘耀文：
+            也许在微风的眼中
+            姚景元/马嘉祺：
+            它们都是自己的英雄
+            合：
+            不做像谁一样的小孩
+            我只要像我一样存在
+            就算在别人看来黯淡
+            却唯独在你心里璀璨
+            丁程鑫：
+            你给我最好礼物 是让我更像我
+            沿着成长轨迹
+            跟未来更好的自己相遇
+            宋亚轩：
+            黑夜里小小萤火 也照亮某个角落
+            蚂蚁就算渺小也从来不向大象示弱
+            刘耀文：
+            犯错的 受挫的 闯祸的我
+            理解着 鼓励着 包容着我
+            丁程鑫：
+            等我把未知风景都看过
+            会在你身边降落
+            马嘉祺：
+            不是像谁一样的小孩
+            我只想像我一样勇敢
+            宋亚轩：
+            在复杂中坚持着简单
+            在眼泪里彷徨也盛开
+            合：
+            没有像我一样的小孩
+            也没有像你一样的爱
+            我们是彼此特别存在
+            谢谢你给我最好陪伴
+            啦啦啦啦啦
+            丁程鑫：
+            大雨落下淋湿了梦
+            姚景元：
+            勇气化作一条彩虹
+            宋亚轩/刘耀文：
+            也许在你们的眼中
+            马嘉祺：
+            我也会是自己的英雄
+        </pre>
+    </div>
+    <div>
+        <address>I'm Jackson</address>
+    </div>
+</body>
+
+</html>
